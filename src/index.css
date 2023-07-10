@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f6f6f6 !important;
+  overflow-x: hidden;
 }
 
 code {
@@ -51,4 +52,13 @@ li {
 
 .product-title {
   height: 10%;
+}
+
+#cart-page-container {
+  width: 100vw;
+  height: 90vh;
+}
+
+.item-quantity-input {
+  width: 10%;
 }

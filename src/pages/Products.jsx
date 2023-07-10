@@ -16,6 +16,12 @@ function Products() {
   const dataProductsPromise = useLoaderData();
   const categoryFilter = searchParams.get("category");
 
+  function addToCart(product) {
+    const existingData = localStorage.getItem("products");
+    const existingItems = JSON.parse(existingData) || [];
+    existingItems.push(product);
+    localStorage.setItem("products", JSON.stringify(existingItems));
+  }
 
   return (
     <Container fluid className="p-5">
@@ -31,8 +37,9 @@ function Products() {
 
                 return filterClothes.map((product) => {
                   if (product.category !== "electronics") {
-                    return <ProductContainer key={product.id} image={product.image} title={product.title} price={product.price} count={product.rating.count} rate={product.rating.rate} />;
+                    return <ProductContainer product={product} key={product.id} image={product.image} title={product.title} price={product.price} count={product.rating.count} rate={product.rating.rate} handleClick={addToCart} />;
                   }
+                  return;
                 });
               }}
             </Await>

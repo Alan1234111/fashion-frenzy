@@ -2,7 +2,6 @@ import star from "../img/star.svg";
 import starFill from "../img/star-fill.svg";
 import Col from "react-bootstrap/esm/Col";
 import Button from "react-bootstrap/esm/Button";
-import {useEffect, useState} from "react";
 
 function ProductContainer(props) {
   const rating = Math.round(props.rate);
@@ -12,15 +11,13 @@ function ProductContainer(props) {
 
     for (let i = 0; i < 5; i++) {
       if (i < rating) {
-        ratingStars.push(<img src={starFill} className="star-fill" />);
+        ratingStars.push(<img src={starFill} className="star-fill" alt="" />);
       } else {
-        ratingStars.push(<img src={star} className="star-fill" />);
+        ratingStars.push(<img src={star} className="star-fill" alt="" />);
       }
     }
 
     return ratingStars;
-
-    // return <img src={starFill} style={{filter: "invert(67%) sepia(27%) saturate(5676%) hue-rotate(0deg) brightness(110%) contrast(105%)"}} />;
   }
 
   return (
@@ -34,7 +31,7 @@ function ProductContainer(props) {
         {showRating()}
         <span className="ms-1">{props.count}</span>
       </div>
-      <Button className="mt-3" variant="success">
+      <Button className="mt-3" variant="success" onClick={() => props.handleClick(props.product)}>
         Add to Cart
       </Button>
     </Col>
