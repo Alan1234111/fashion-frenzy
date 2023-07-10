@@ -14,7 +14,9 @@ function ProductCartContainer(props) {
       <p className="fw-bold m-0" style={{width: "70px"}}>
         $ {props.price.toFixed(2)}
       </p>
-      <Button className="text-secondary bg-white border-0">&#10005;</Button>
+      <Button onClick={() => props.handleDelete(props.id)} className="text-secondary bg-white border-0">
+        &#10005;
+      </Button>
     </div>
   );
 }
