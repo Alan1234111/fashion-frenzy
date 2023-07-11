@@ -1,5 +1,4 @@
 import {RouterProvider, createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
-import {createBrowserHistory} from "history";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,13 +8,9 @@ import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Error from "./components/Error";
 
-const history = createBrowserHistory({
-  basename: "https://alan1234111.github.io/fashion-frenzy",
-});
-
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/fashion-frenzy" element={<Layout />}>
+    <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="products" element={<Products />} loader={productsLoader} errorElement={<Error />} />
@@ -27,7 +22,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} history={history} />;
+  return <RouterProvider router={router} />;
 }
 
 export default App;

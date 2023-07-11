@@ -47,7 +47,7 @@
     ]
   },
   "devDependencies": {
+    "netlify-cli": "^15.8.1",
     "react-test-renderer": "^18.2.0"
-  },
-  "homepage": "https://alan1234111.github.io/fashion-frenzy"
+  }
 }
