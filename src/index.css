@@ -11,13 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* Navbar */
+/* Header */
 
 #navbar {
   height: 10vh;
 }
 
 #cart {
+  position: relative;
   background: url("./img/cart.svg") no-repeat;
   width: 16px;
   height: 16px;
@@ -61,4 +62,14 @@ li {
 
 .item-quantity-input {
   width: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
