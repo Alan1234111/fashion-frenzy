@@ -1,10 +1,10 @@
-import NavbarComponent from "./NavbarComponent";
+import Header from "./Header";
 import {Outlet} from "react-router-dom";
 
 function Layout() {
   return (
     <>
-      <NavbarComponent />
+      <Header />
       <Outlet />
     </>
   );
