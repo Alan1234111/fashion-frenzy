@@ -1,6 +1,19 @@
 export async function getClothes() {
-  const res = await fetch("https://fakestoreapi.com/products/");
-  const data = await res.json();
+  try {
+    const res = await fetch("https://fakestoreapi.com/products/");
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    throw err;
+  }
+}
 
-  return data;
+export async function getProduct(id) {
+  try {
+    const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    throw err;
+  }
 }
