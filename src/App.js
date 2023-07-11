@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Error from "./components/Error";
 
 const history = createBrowserHistory({
-  basename: "https://alan1234111.github.io/fashion-frenzy",
+  basename: "https://alan1234111.github.io",
 });
 
 const router = createBrowserRouter(
