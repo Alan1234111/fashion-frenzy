@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/fashion-frenzy/static/css/main.77e76343.css",
+    "main.js": "/fashion-frenzy/static/js/main.7045c50f.js",
+    "static/media/background.jpg": "/fashion-frenzy/static/media/background.f14ce9ae6eac68a5065d.jpg",
+    "static/media/github-mark.svg": "/fashion-frenzy/static/media/github-mark.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "index.html": "/fashion-frenzy/index.html",
+    "static/media/cart.svg": "/fashion-frenzy/static/media/cart.9715b7a4f7df94b4560b.svg",
+    "static/media/star.svg": "/fashion-frenzy/static/media/star.a728d7c709189cdc87862b2aa227f69d.svg",
+    "static/media/star-fill.svg": "/fashion-frenzy/static/media/star-fill.6c627543f6a9a5280af44d2737dbf9ad.svg",
+    "main.77e76343.css.map": "/fashion-frenzy/static/css/main.77e76343.css.map",
+    "main.7045c50f.js.map": "/fashion-frenzy/static/js/main.7045c50f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77e76343.css",
+    "static/js/main.7045c50f.js"
+  ]
+}
