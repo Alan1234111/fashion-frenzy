@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import {useState} from "react";
@@ -61,7 +61,7 @@ function Cart() {
   });
 
   return (
-    <div id="cart-page-container" className="d-flex justify-content-center align-items-center">
+    <div data-testid="cart" id="cart-page-container" className="d-flex justify-content-center align-items-center">
       <Container id="cart-description-container" className="h-100">
         <Row className="mt-5 shadow-lg">
           <Col md={8} className="bg-white rounded">

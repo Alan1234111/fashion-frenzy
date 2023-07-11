@@ -1,10 +1,10 @@
 import {Suspense} from "react";
-import Container from "react-bootstrap/esm/Container";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import {getClothes} from "../api";
 import {useLoaderData, defer, Await, useSearchParams} from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
-import ProductContainer from "../components/ProuductContainer";
+import ProductContainer from "../components/ProductContainer";
 import Loading from "../components/Loading";
 
 export function loader() {

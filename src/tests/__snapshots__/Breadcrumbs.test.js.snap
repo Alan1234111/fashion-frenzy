@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Breadcrumbs correctly 1`] = `
+<div>
+  <div
+    class="ms-md-5 nav"
+  >
+    <ul
+      class="d-flex justify-content-around align-items-center p-0"
+    >
+      <li>
+        <a
+          class="pe-1 ps-0 text-dark nav-link"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="pe-1"
+      >
+        &gt;
+      </li>
+      <li
+        class="pe-1"
+      >
+        Products
+      </li>
+      <li
+        class="pe-1"
+      >
+        &gt;
+      </li>
+      <li
+        class="pe-1"
+      >
+        <select
+          aria-label="Default select example"
+          class="shadow-none pe-5 fw-bold form-select"
+        >
+          <option
+            value="all"
+          >
+            All
+          </option>
+          <option
+            value="jewelery"
+          >
+            Jewelery
+          </option>
+          <option
+            value="men's clothing"
+          >
+            Men's Clothing
+          </option>
+          <option
+            value="women's clothing"
+          >
+            Women's Clothing
+          </option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

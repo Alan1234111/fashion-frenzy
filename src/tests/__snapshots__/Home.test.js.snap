@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home matches the snapshot 1`] = `
+<div
+  className="d-flex align-items-center container-fluid"
+  id="home"
+>
+  <div
+    className="d-flex justify-content-center  row"
+  >
+    <div
+      className="d-flex flex-column align-items-center p-5  col-md-6 col-12"
+    >
+      <h1
+        className="text-center text-white fw-bold"
+      >
+        Welcome to FashionFrenzy!
+      </h1>
+      <h2
+        className="text-white fs-6 text-center"
+      >
+        Discover FashionFrenzy, where style meets passion. Explore our meticulously curated collection, blending timeless classics with cutting-edge designs. Embrace your unique fashion sense with our diverse range of clothing, accessories, and footwear. Step into a fashion sanctuary and unleash your style like never before.
+      </h2>
+      <a
+        className="mt-4 btn btn-danger"
+        disabled={false}
+        href="/products"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        SHOP NOW
+      </a>
+    </div>
+  </div>
+</div>
+`;

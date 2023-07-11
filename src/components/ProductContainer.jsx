@@ -1,7 +1,7 @@
 import star from "../img/star.svg";
 import starFill from "../img/star-fill.svg";
-import Col from "react-bootstrap/esm/Col";
-import Button from "react-bootstrap/esm/Button";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 
 function ProductContainer(props) {

@@ -1,10 +1,10 @@
 import {Suspense} from "react";
-import {useLoaderData, defer, Await, Link} from "react-router-dom";
+import {useLoaderData, defer, Await} from "react-router-dom";
 import {getProduct} from "../api";
 import Loading from "../components/Loading";
-import Container from "react-bootstrap/esm/Container";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/esm/Col";
+import Col from "react-bootstrap/Col";
 
 export function loader({params}) {
   return defer({product: getProduct(params.id)});
@@ -25,7 +25,7 @@ function ProductDetail() {
   }
 
   return (
-    <Container className="d-flex flex-column align-items-center justify-content-center mt-5">
+    <Container data-testid="product-detail" className="d-flex flex-column align-items-center justify-content-center mt-5">
       <h2 className="fw-bold mb-5">Product Info</h2>
       <Suspense fallback={<Loading />}>
         <Await resolve={dataProductPromise.product}>

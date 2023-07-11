@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches the snapshot 1`] = `
+Array [
+  <nav
+    className="bg-dark navbar navbar-expand-lg navbar-light"
+    id="navbar"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="text-white fs-3 navbar-brand"
+        href="/"
+        onClick={[Function]}
+      >
+        FashionFrenzy
+      </a>
+      <button
+        aria-controls="responsive-navbar-nav"
+        aria-label="Toggle navigation"
+        className="bg-danger border-0 navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="responsive-navbar-nav"
+      >
+        <div
+          className="ms-auto navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <a
+            aria-current="page"
+            className="text-white nav-link active"
+            data-rr-ui-event-key={null}
+            disabled={false}
+            href="/"
+            onClick={[Function]}
+            style={
+              Object {
+                "borderBottom": "white solid 1px",
+              }
+            }
+          >
+            Home
+          </a>
+          <a
+            className="text-white nav-link"
+            data-rr-ui-event-key={null}
+            disabled={false}
+            href="/products"
+            onClick={[Function]}
+            style={null}
+          >
+            Products
+          </a>
+          <a
+            className="text-white nav-link"
+            data-rr-ui-event-key={null}
+            disabled={false}
+            href="/about"
+            onClick={[Function]}
+            style={null}
+          >
+            About
+          </a>
+        </div>
+        <a
+          className="ms-md-3 mt-2 mt-md-0 nav-link"
+          disabled={false}
+          href="/cart"
+          id="cart"
+          onClick={[Function]}
+        />
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="d-flex align-items-center container-fluid"
+    id="home"
+  >
+    <div
+      className="d-flex justify-content-center  row"
+    >
+      <div
+        className="d-flex flex-column align-items-center p-5  col-md-6 col-12"
+      >
+        <h1
+          className="text-center text-white fw-bold"
+        >
+          Welcome to FashionFrenzy!
+        </h1>
+        <h2
+          className="text-white fs-6 text-center"
+        >
+          Discover FashionFrenzy, where style meets passion. Explore our meticulously curated collection, blending timeless classics with cutting-edge designs. Embrace your unique fashion sense with our diverse range of clothing, accessories, and footwear. Step into a fashion sanctuary and unleash your style like never before.
+        </h2>
+        <a
+          className="mt-4 btn btn-danger"
+          disabled={false}
+          href="/products"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </div>,
+]
+`;

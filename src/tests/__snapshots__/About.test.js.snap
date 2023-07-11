@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About matches the snapshot 1`] = `
+<div
+  class="d-flex flex-column justify-content-center align-items-center p-5 fw-bold fs-5 text-center"
+  data-testid="about"
+  id="about"
+>
+  <p>
+    This is a fictional store and none of the products displayed here exist.
+  </p>
+  <p>
+    Products' information and images: Fake Store API.
+  </p>
+  <a
+    class="d-flex align-items-center fs-5 fw-normal nav-link"
+    href="https://github.com/Alan1234111"
+    target="_blank"
+  >
+    Alan © 
+    <img
+      alt=""
+      class="h-25 mx-2"
+      src="github-mark.svg"
+    />
+  </a>
+</div>
+`;

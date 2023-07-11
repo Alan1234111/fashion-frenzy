@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ProductCartContainer correctly 1`] = `
+<div>
+  <div
+    class="d-flex align-items-center justify-content-between p-4 border-top border-bottom flex-column flex-md-row container"
+  >
+    <div
+      class="p-4 p-md-0 col-md-2"
+    >
+      <a
+        href="/products/123"
+      >
+        <img
+          alt=""
+          src="image-url"
+          style="height: 100px;"
+        />
+      </a>
+    </div>
+    <div
+      class="col-md-3"
+    >
+      <p
+        class="fw-bold m-0"
+      >
+        Product Title
+      </p>
+    </div>
+    <div
+      class="d-flex align-items-center justify-content-center col-md-4"
+    >
+      <button
+        class="text-secondary bg-white border-0 fs-4 btn btn-primary"
+        type="button"
+      >
+        -
+      </button>
+      <input
+        class="item-quantity-input text-center"
+        type="number"
+        value="2"
+      />
+      <button
+        class="text-secondary bg-white border-0 btn btn-primary"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      class="col-md-2"
+    >
+      <p
+        class="fw-bold m-md-0 mt-2"
+        style="width: 70px;"
+      >
+        $ 
+        9.99
+      </p>
+    </div>
+    <div
+      class="col-md-2"
+    >
+      <button
+        class="text-secondary bg-white border-0 btn btn-primary"
+        type="button"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;
