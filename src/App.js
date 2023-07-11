@@ -10,12 +10,12 @@ import NotFound from "./pages/NotFound";
 import Error from "./components/Error";
 
 const history = createBrowserHistory({
-  basename: "https://alan1234111.github.io",
+  basename: "https://alan1234111.github.io/fashion-frenzy",
 });
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/fashion-frenzy" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="products" element={<Products />} loader={productsLoader} errorElement={<Error />} />
