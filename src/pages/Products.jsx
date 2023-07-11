@@ -29,7 +29,7 @@ function Products() {
 
   return (
     <Container fluid className="p-5">
-      <h2 className="ms-5">Shop</h2>
+      <h2 className="ms-md-5">Shop</h2>
       <Breadcrumbs />
 
       <Container fluid>

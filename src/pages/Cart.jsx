@@ -101,7 +101,7 @@ function Cart() {
                 <p className="me-auto">TOTAL PRICE</p>
                 <p>$ {totalCost}</p>
               </div>
-              <Button variant="danger" className="w-100 mt-2 mb-4">
+              <Button variant="danger" className="w-100 mt-2 mb-4" as={Link} to={"/"}>
                 Checkout
               </Button>
             </div>

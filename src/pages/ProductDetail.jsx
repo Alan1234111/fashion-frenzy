@@ -4,6 +4,7 @@ import {getProduct} from "../api";
 import Loading from "../components/Loading";
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/esm/Col";
 
 export function loader({params}) {
   return defer({product: getProduct(params.id)});
@@ -31,17 +32,17 @@ function ProductDetail() {
           {(product) => {
             return (
               <>
-                <div className="d-flex bg-white w-50 justify-content-space-around p-5 shadow">
-                  <img className="me-5 w-50" src={product.image} alt="" style={{height: "250px"}} />
-                  <div className="">
-                    <h3 className="fs-4 fw-bold">${product.price.toFixed(2)}</h3>
+                <Col md={6} className="d-md-flex bg-white justify-content-space-around p-5 shadow text-center">
+                  <img className="me-md-5 w-50" src={product.image} alt="" style={{height: "250px"}} />
+                  <di>
+                    <h3 className="fs-4 fw-bold mt-3">${product.price.toFixed(2)}</h3>
                     <h4 className="mt-4">{product.title}</h4>
                     <h5 className="fs-6 fw-light mt-4">{product.description}</h5>
                     <Button variant="danger" className="mt-4" onClick={() => addToCart(product)}>
                       Add to Cart
                     </Button>
-                  </div>
-                </div>
+                  </di>
+                </Col>
               </>
             );
           }}

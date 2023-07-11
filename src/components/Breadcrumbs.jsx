@@ -17,7 +17,7 @@ function Breadcrumbs() {
   }
 
   return (
-    <Nav className="ms-5">
+    <Nav className="ms-md-5">
       <ul className="d-flex justify-content-around align-items-center p-0">
         <li>
           <Nav.Link as={Link} to="/" className="pe-1 ps-0 text-dark">

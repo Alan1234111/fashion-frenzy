@@ -16,7 +16,7 @@ function NavbarComponent() {
         <Navbar.Brand as={Link} to="/" className="text-white fs-3">
           FashionFrenzy
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-danger border-0" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/" style={({isActive}) => (isActive ? activeStyles : null)} className="text-white">
@@ -29,7 +29,7 @@ function NavbarComponent() {
               About
             </Nav.Link>
           </Nav>
-          <Nav.Link as={Link} to="/cart" className="ms-3" id="cart"></Nav.Link>
+          <Nav.Link as={Link} to="/cart" className="ms-md-3 mt-2 mt-md-0" id="cart"></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
