@@ -19,6 +19,10 @@ function Products() {
   function addToCart(product) {
     const existingData = localStorage.getItem("products");
     const existingItems = JSON.parse(existingData) || [];
+    const isAlredyExist = existingItems.some((item) => item.id === product.id);
+    if (isAlredyExist) return;
+    product.quantity = 1;
+
     existingItems.push(product);
     localStorage.setItem("products", JSON.stringify(existingItems));
   }
@@ -37,7 +41,7 @@ function Products() {
 
                 return filterClothes.map((product) => {
                   if (product.category !== "electronics") {
-                    return <ProductContainer product={product} key={product.id} image={product.image} title={product.title} price={product.price} count={product.rating.count} rate={product.rating.rate} handleClick={addToCart} />;
+                    return <ProductContainer key={product.id} id={product.id} product={product} image={product.image} title={product.title} price={product.price} count={product.rating.count} rate={product.rating.rate} handleClick={addToCart} />;
                   }
                   return;
                 });
