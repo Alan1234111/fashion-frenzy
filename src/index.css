@@ -14,6 +14,10 @@ code {
 
 /* Header */
 
+#navbar {
+  z-index: 1;
+}
+
 #cart {
   position: relative;
   background: url("./img/cart.svg") no-repeat;
@@ -30,7 +34,6 @@ code {
   bottom: 0%;
   background: url("./img//background.jpg") no-repeat top right;
   background-size: cover;
-  z-index: -1;
 }
 
 /* About page */
@@ -58,6 +61,22 @@ li {
 #cart-page-container {
   width: 100vw;
   height: 90vh;
+}
+
+#cart-link-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#cart-link-container span {
+  position: absolute;
+  top: -50%;
+  left: 25%;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
 }
 
 .item-quantity-input {

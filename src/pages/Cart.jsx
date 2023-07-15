@@ -5,14 +5,15 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
 import Form from "react-bootstrap/Form";
-import {useState} from "react";
+import {useState, useContext} from "react";
 import ProductCartContainer from "../components/ProductCartContainer";
+import {CartContext} from "../components/CartContext";
 
 function Cart() {
-  const [productsInCart, setProductsInCart] = useState(JSON.parse(localStorage.getItem("products")) || []);
+  const productsInCart = useContext(CartContext).productsInCart;
+  const setProductsInCart = useContext(CartContext).setProductsInCart;
+  const numberOfItems = useContext(CartContext).numberOfItems;
   const [delivery, setDelivery] = useState(10.95);
-
-  const numberOfItems = productsInCart.map((product) => product.quantity).reduce((total, prev) => total + prev, 0);
 
   const costOfProducts = productsInCart.reduce((total, product) => total + product.price * product.quantity, 0);
   const totalCost = parseFloat(costOfProducts + parseFloat(delivery)).toFixed(2);

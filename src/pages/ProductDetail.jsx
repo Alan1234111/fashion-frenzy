@@ -5,6 +5,8 @@ import Loading from "../components/Loading";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
+import {CartContext} from "../components/CartContext";
+import {useContext} from "react";
 
 export function loader({params}) {
   return defer({product: getProduct(params.id)});
@@ -12,6 +14,7 @@ export function loader({params}) {
 
 function ProductDetail() {
   const dataProductPromise = useLoaderData();
+  const setProductsInCart = useContext(CartContext).setProductsInCart;
 
   function addToCart(product) {
     const existingData = localStorage.getItem("products");
@@ -22,6 +25,7 @@ function ProductDetail() {
 
     existingItems.push(product);
     localStorage.setItem("products", JSON.stringify(existingItems));
+    setProductsInCart(JSON.parse(localStorage.getItem("products")) || []);
   }
 
   return (

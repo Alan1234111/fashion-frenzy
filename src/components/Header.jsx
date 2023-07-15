@@ -1,10 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import {useContext} from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {Link, NavLink} from "react-router-dom";
+import {CartContext} from "./CartContext";
 
 function NavbarComponent() {
+  const numberOfItems = useContext(CartContext).numberOfItems;
+
   const activeStyles = {
     borderBottom: "white solid 1px",
   };
@@ -28,7 +32,10 @@ function NavbarComponent() {
               About
             </Nav.Link>
           </Nav>
-          <Nav.Link as={Link} to="/cart" className="ms-md-3 mt-2 mt-md-0" id="cart"></Nav.Link>
+          <div id="cart-link-container">
+            <Nav.Link as={Link} to="/cart" className="ms-md-3 mt-2 mt-md-0" id="cart"></Nav.Link>
+            {numberOfItems !== 0 && <span className="bg-danger d-flex justify-content-center align-items-center">{numberOfItems}</span>}
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
